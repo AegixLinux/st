@@ -1,7 +1,7 @@
 # TANKLINUX's build of st - the simple (suckless) terminal
 
-The [suckless terminal (st)](https://st.suckless.org/) with some additional
-features that make it literally the best terminal emulator ever:
+The [suckless terminal (st)](https://st.suckless.org/) 
+with some very nice additional features:
 
 ## Unique features (using dmenu)
 
@@ -34,12 +34,12 @@ features that make it literally the best terminal emulator ever:
 + font2
 + updated to latest version 0.8.4
 
-## Installation for newbs
+## Installation outside of TANKLINUX
 
 You should have xlib header files and libharfbuzz build files installed.
 
 ```
-git clone https://github.com/TANKLINUXSmithxyz/st
+git clone https://github.com/tanklinux/st
 cd st
 sudo make install
 ```
