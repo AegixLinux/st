@@ -107,13 +107,14 @@ char *termname = "st-256color";
 unsigned int tabspaces = 8;
 
 /* bg opacity */
-float alpha = 0.6;
+float alpha = 0.9;
 float alphaOffset = 0.0;
 float alphaUnfocus;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-	"#282828", /* hard contrast: #1d2021 / soft contrast: #32302f */
+	/* "#282828", hard contrast: #1d2021 / soft contrast: #32302f */
+	"#1d2021", /* hard contrast: #1d2021 / soft contrast: #32302f */
 	"#cc241d",
 	"#98971a",
 	"#d79921",
@@ -133,8 +134,14 @@ static const char *colorname[] = {
 	/* more colors can be added after 255 to use with DefaultXX */
 	"#add8e6", /* 256 -> cursor */
 	"#555555", /* 257 -> rev cursor*/
+	/* "#2E8B57",  258 -> bg */
 	"#282828", /* 258 -> bg */
 	"#ebdbb2", /* 259 -> fg */
+	"#9FC1C5", /* 260 -> TL light seafoam */
+	"#72AF97", /* 261 -> TL seafoam */
+	"#374A38", /* 262 -> TL green */
+	"#5976AC", /* 263 -> TL blue */
+	"#A1ABB9", /* 264 -> TL grey */
 };
 
 
@@ -142,11 +149,11 @@ static const char *colorname[] = {
  * Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
  */
-unsigned int defaultfg = 259;
-unsigned int defaultbg = 258;
+unsigned int defaultfg = 260;
+unsigned int defaultbg = 261;
 unsigned int defaultcs = 256;
 unsigned int defaultrcs = 257;
-unsigned int background = 258;
+unsigned int background = 262;
 
 /*
  * Default shape of cursor
@@ -155,7 +162,7 @@ unsigned int background = 258;
  * 6: Bar ("|")
  * 7: Snowman ("☃")
  */
-static unsigned int cursorshape = 7;
+static unsigned int cursorshape = 2;
 
 /*
  * Default columns and rows numbers
@@ -245,7 +252,6 @@ static MouseShortcut mshortcuts[] = {
 static char *openurlcmd[] = { "/bin/sh", "-c", "st-urlhandler -o", "externalpipe", NULL };
 static char *copyurlcmd[] = { "/bin/sh", "-c", "st-urlhandler -c", "externalpipe", NULL };
 static char *copyoutput[] = { "/bin/sh", "-c", "st-copyout", "externalpipe", NULL };
-
 
 static Shortcut shortcuts[] = {
 	/* mask                 keysym          function        argument */
