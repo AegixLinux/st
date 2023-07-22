@@ -107,7 +107,8 @@ char *termname = "st-256color";
 unsigned int tabspaces = 8;
 
 /* bg opacity */
-float alpha = 0.9;
+/*float alpha = 0.90;*/
+float alpha = 0.88;
 float alphaOffset = 0.0;
 float alphaUnfocus;
 
@@ -134,14 +135,21 @@ static const char *colorname[] = {
 	/* more colors can be added after 255 to use with DefaultXX */
 	"#add8e6", /* 256 -> cursor */
 	"#555555", /* 257 -> rev cursor*/
-	/* "#2E8B57",  258 -> bg */
-	"#282828", /* 258 -> bg */
+	"#002000", /* 258 -> dark green bg */
 	"#ebdbb2", /* 259 -> fg */
 	"#9FC1C5", /* 260 -> TL light seafoam */
 	"#72AF97", /* 261 -> TL seafoam */
 	"#374A38", /* 262 -> TL green */
 	"#5976AC", /* 263 -> TL blue */
 	"#A1ABB9", /* 264 -> TL grey */
+	"#7e79b8", /* 265 -> TL light purple */
+	"#9390c3", /* 266 -> TL ligher purple */
+	"#8B0000", /* 267 -> TL burgundy */
+	"#4e1c8a", /* 268 -> TL dark purple */
+	"#20B2AA", /* 269 -> TL pale seafoam */
+	"#FFD400", /* 270 -> cyber yellow */
+	"#FF007D", /* 271 -> neon pink */
+	"#001000" /* 272 -> darker green */
 };
 
 
@@ -149,11 +157,11 @@ static const char *colorname[] = {
  * Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
  */
-unsigned int defaultfg = 260;
+unsigned int defaultfg = 269;
 unsigned int defaultbg = 261;
 unsigned int defaultcs = 256;
 unsigned int defaultrcs = 257;
-unsigned int background = 262;
+unsigned int background = 272;
 
 /*
  * Default shape of cursor
