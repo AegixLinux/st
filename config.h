@@ -137,10 +137,10 @@ static const char *colorname[] = {
 	"#555555", /* 257 -> rev cursor*/
 	"#002000", /* 258 -> dark green bg */
 	"#ebdbb2", /* 259 -> fg */
-	"#9FC1C5", /* 260 -> TL light seafoam */
+	"#9FC1C5", /* 260 -> TL light blue */
 	"#72AF97", /* 261 -> TL seafoam */
 	"#374A38", /* 262 -> TL green */
-	"#5976AC", /* 263 -> TL blue */
+	"#091833", /* 263 -> TL blue */
 	"#A1ABB9", /* 264 -> TL grey */
 	"#7e79b8", /* 265 -> TL light purple */
 	"#9390c3", /* 266 -> TL ligher purple */
@@ -149,7 +149,9 @@ static const char *colorname[] = {
 	"#20B2AA", /* 269 -> TL pale seafoam */
 	"#FFD400", /* 270 -> cyber yellow */
 	"#FF007D", /* 271 -> neon pink */
-	"#001000" /* 272 -> darker green */
+	"#001000", /* 272 -> darker green */
+	"#39FF14", /* 273 -> neon green */
+	"#0abdc6" /* 274 -> neon blue */
 };
 
 
@@ -157,11 +159,11 @@ static const char *colorname[] = {
  * Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
  */
-unsigned int defaultfg = 269;
-unsigned int defaultbg = 261;
-unsigned int defaultcs = 256;
-unsigned int defaultrcs = 257;
-unsigned int background = 272;
+unsigned int defaultfg = 274;
+unsigned int defaultbg = 270;
+unsigned int defaultcs = 271;
+unsigned int defaultrcs = 273;
+unsigned int background = 263;
 
 /*
  * Default shape of cursor
