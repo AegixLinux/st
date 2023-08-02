@@ -108,7 +108,7 @@ unsigned int tabspaces = 8;
 
 /* bg opacity */
 /*float alpha = 0.90;*/
-float alpha = 0.88;
+float alpha = 0.85;
 float alphaOffset = 0.0;
 float alphaUnfocus;
 
@@ -136,8 +136,8 @@ static const char *colorname[] = {
 	"#add8e6", /* 256 -> cursor */
 	"#555555", /* 257 -> rev cursor*/
 	"#002000", /* 258 -> dark green bg */
-	"#ebdbb2", /* 259 -> fg */
-	"#9FC1C5", /* 260 -> TL light blue */
+	"#ebdbb2", /* 259 -> light beige */
+	"#9FC1C5", /* 260 -> light blue */
 	"#72AF97", /* 261 -> TL seafoam */
 	"#374A38", /* 262 -> TL green */
 	"#091833", /* 263 -> TL blue */
@@ -154,16 +154,15 @@ static const char *colorname[] = {
 	"#0abdc6" /* 274 -> neon blue */
 };
 
-
 /*
  * Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
  */
-unsigned int defaultfg = 274;
-unsigned int defaultbg = 270;
-unsigned int defaultcs = 271;
-unsigned int defaultrcs = 273;
-unsigned int background = 263;
+unsigned int defaultfg = 259; /* non-dir default text */
+unsigned int defaultbg = 270; /* .. */
+unsigned int defaultcs = 271; /* .. */
+unsigned int defaultrcs = 273; /* .. */
+unsigned int background = 258; /* impacted by opacity setting */
 
 /*
  * Default shape of cursor
