@@ -108,50 +108,50 @@ unsigned int tabspaces = 8;
 
 /* bg opacity */
 /*float alpha = 0.90;*/
-float alpha = 0.85;
+float alpha = 0.88;
 float alphaOffset = 0.0;
 float alphaUnfocus;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-	/* "#282828", hard contrast: #1d2021 / soft contrast: #32302f */
-	"#1d2021", /* hard contrast: #1d2021 / soft contrast: #32302f */
-	"#cc241d",
-	"#98971a",
-	"#d79921",
-	"#458588",
-	"#b16286",
-	"#689d6a",
-	"#a89984",
-	"#928374",
-	"#fb4934",
-	"#b8bb26",
-	"#fabd2f",
-	"#83a598",
-	"#d3869b",
-	"#8ec07c",
-	"#ebdbb2",
-	[255] = 0,
-	/* more colors can be added after 255 to use with DefaultXX */
-	"#add8e6", /* 256 -> cursor */
-	"#555555", /* 257 -> rev cursor*/
-	"#002000", /* 258 -> dark green bg */
-	"#ebdbb2", /* 259 -> light beige */
-	"#9FC1C5", /* 260 -> light blue */
-	"#72AF97", /* 261 -> TL seafoam */
-	"#374A38", /* 262 -> TL green */
-	"#091833", /* 263 -> TL blue */
-	"#A1ABB9", /* 264 -> TL grey */
-	"#7e79b8", /* 265 -> TL light purple */
-	"#9390c3", /* 266 -> TL ligher purple */
-	"#8B0000", /* 267 -> TL burgundy */
-	"#4e1c8a", /* 268 -> TL dark purple */
-	"#20B2AA", /* 269 -> TL pale seafoam */
-	"#FFD400", /* 270 -> cyber yellow */
-	"#FF007D", /* 271 -> neon pink */
-	"#001000", /* 272 -> darker green */
-	"#39FF14", /* 273 -> neon green */
-	"#0abdc6" /* 274 -> neon blue */
+        /* "#282828", hard contrast: #1d2021 / soft contrast: #32302f */
+        "#1d2021", /* hard contrast: #1d2021 / soft contrast: #32302f */
+        "#cc241d",
+        "#98971a",
+        "#d79921",
+        "#458588",
+        "#b16286",
+        "#689d6a",
+        "#a89984",
+        "#928374",
+        "#fb4934",
+        "#b8bb26",
+        "#fabd2f",
+        "#83a598",
+        "#d3869b",
+        "#8ec07c",
+        "#ebdbb2",
+        [255] = 0,
+        /* more colors can be added after 255 to use with DefaultXX */
+        "#add8e6", /* 256 -> cursor */
+        "#555555", /* 257 -> rev cursor*/
+        "#191400", /* 258 -> dark green bg */
+        "#ebdbb2", /* 259 -> light beige */
+        "#9FC1C5", /* 260 -> light blue */
+        "#72AF97", /* 261 -> TL seafoam */
+        "#374A38", /* 262 -> TL green */
+        "#091833", /* 263 -> TL blue */
+        "#A1ABB9", /* 264 -> TL grey */
+        "#7e79b8", /* 265 -> TL light purple */
+        "#9390c3", /* 266 -> TL ligher purple */
+        "#8B0000", /* 267 -> TL burgundy */
+        "#4e1c8a", /* 268 -> TL dark purple */
+        "#20B2AA", /* 269 -> TL pale seafoam */
+        "#FFD400", /* 270 -> cyber yellow */
+        "#FF007D", /* 271 -> neon pink */
+        "#001000", /* 272 -> darker green */
+        "#39FF14", /* 273 -> neon green */
+        "#0abdc6" /* 274 -> neon blue */
 };
 
 /*
@@ -163,6 +163,7 @@ unsigned int defaultbg = 270; /* .. */
 unsigned int defaultcs = 271; /* .. */
 unsigned int defaultrcs = 273; /* .. */
 unsigned int background = 258; /* impacted by opacity setting */
+
 
 /*
  * Default shape of cursor
