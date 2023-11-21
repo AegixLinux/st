@@ -1,6 +1,8 @@
 # Aegix's build of st - the simple (suckless) terminal
 
-The [suckless terminal (st)](https://st.suckless.org/) 
+Much still borrowed from Luke here.
+
+The [suckless terminal (st)](https://st.suckless.org/)
 with some very nice additional features:
 
 ## Unique features (using dmenu)
@@ -39,7 +41,7 @@ with some very nice additional features:
 You should have xlib header files and libharfbuzz build files installed.
 
 ```
-git clone https://github.com/aegixlinux/st
+git clone https://github.com/AegixLinux/st
 cd st
 sudo make install
 ```
