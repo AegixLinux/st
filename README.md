@@ -1,4 +1,4 @@
-# TANKLINUX's build of st - the simple (suckless) terminal
+# Aegix's build of st - the simple (suckless) terminal
 
 The [suckless terminal (st)](https://st.suckless.org/) 
 with some very nice additional features:
@@ -34,12 +34,12 @@ with some very nice additional features:
 + font2
 + updated to latest version 0.8.4
 
-## Installation outside of TANKLINUX
+## Installation outside of Aegix
 
 You should have xlib header files and libharfbuzz build files installed.
 
 ```
-git clone https://github.com/tanklinux/st
+git clone https://github.com/aegixlinux/st
 cd st
 sudo make install
 ```
@@ -95,5 +95,5 @@ smaller size than the usual text.
 
 ## Contact
 
-- TANKLINUX <tanklinux.com>
-- [https://tanklinux.com](https://tanklinux.com)
+- Aegix <aegixlinux.org>
+- [https://aegixlinux.org](https://aegixlinux.org)
